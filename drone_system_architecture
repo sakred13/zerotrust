@@ -1,0 +1,12 @@
+digraph {
+	"Drone A" [label="Drone A"]
+	"Zero Trust System" [label="Zero Trust System"]
+	"Bayesian Network" [label="Bayesian Network"]
+	"Attack Database" [label="Historical Attack Attempt Database"]
+	"Security Policies" [label="Security Policies"]
+	"Drone A" -> "Zero Trust System" [label="Communication Request"]
+	"Zero Trust System" -> "Bayesian Network"
+	"Bayesian Network" -> "Attack Database" [label="Metrics & Probabilistic Risk"]
+	"Bayesian Network" -> "Zero Trust System" [label="Risk Score"]
+	"Zero Trust System" -> "Security Policies" [label="ZT Grade"]
+}
